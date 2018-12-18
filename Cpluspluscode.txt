@@ -30,7 +30,7 @@ int main(){
     cin>>a>>b;
     while(a<0 && b<0){
           cout<<"There is an error"<<endl;
-          cout<<"Input float a and integer b : /n";
+          cout<<"Reinput float a and integer b : "<<endl;
           cin>>a>>b;
     }
     cal = powerpertorial(a,b);
