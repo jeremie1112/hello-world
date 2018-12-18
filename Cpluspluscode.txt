@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+float factorialN(int n){
+    if (n == 1 || n == 0){
+        return 1;
+    }
+    else{
+        return(n * factorialN(n-1));
+    }
+}
+
+float XpowerN(float x,int n){
+    if (n == 0){
+        return 1;
+    }
+    else{
+        return(x * XpowerN(x,n-1));
+    }
+}
+
+float powerpertorial(float x, int n){
+    return (XpowerN(x,n)/factorialN(n));
+}
+
+int main(){
+    int b
+    float a, cal;
+    cout<<"Input float a and integer b : /n"
+    cin>>a>>b;
+    while(a<0 && b<0){
+          cout<<"ERRORRRRRRRRRRRRRRRRRRRRRRRRR /n";
+          cout<<"Input float a and integer b : /n";
+          cin>>a>>b;
+    }
+    cal = powerpertorial(a,b);
+    cout<<"a^b / b! is : "<<cal<<endl;
+    return 0;
+}
+
