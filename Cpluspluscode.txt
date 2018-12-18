@@ -1,3 +1,4 @@
+<h1>Program about factorials
 #include <iostream>
 using namespace std;
 
