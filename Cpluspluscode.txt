@@ -25,7 +25,7 @@ float powerpertorial(float x, int n){
 
 int main(){
     int b
-    float a, cal;
+    float a, calculate;
     cout<<"Input float a and integer b : /n"
     cin>>a>>b;
     while(a<0 && b<0){
@@ -33,8 +33,8 @@ int main(){
           cout<<"Reinput float a and integer b : "<<endl;
           cin>>a>>b;
     }
-    cal = powerpertorial(a,b);
-    cout<<"a^b / b! is : "<<cal<<endl;
+    calculate = powerpertorial(a,b);
+    cout<<"a^b / b! is : "<<calculate<<endl;
     return 0;
 }
 
